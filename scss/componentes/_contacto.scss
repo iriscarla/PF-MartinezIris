@@ -1,0 +1,44 @@
+#body-contacto{
+    @extend %background;
+}
+
+
+/*Boton ENVIAR*/
+
+/*Fuente BS*/
+.modifica-font{
+    font-family: 'Tajawal', sans-serif;
+    font-weight:bold ;
+}
+
+/*Color de fondo BS */
+.color-boton{
+    background-color: map-get($colors, terracota );
+    border: map-get($colors, rosa-viejo ) solid 1.5px;
+    text-shadow: none;
+    
+}
+
+/*Hover BS*/
+.animacion-boton a:hover{
+    background-color: transparent !important;
+    font-weight: bold;
+ }
+
+#contacto-main{
+  
+        iframe{
+            width: 40%;
+        }
+        
+}
+
+.mapa-contacto{
+    margin: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+        h3{
+            margin: 15px;
+        }
+}

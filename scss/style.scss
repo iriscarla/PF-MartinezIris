@@ -1,0 +1,37 @@
+/*Tipografias:
+font-family: 'Amiri Quran', serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Mandali', sans-serif;
+font-family: 'MonteCarlo', cursive;
+font-family: 'Tajawal', sans-serif; */
+
+html{
+    box-sizing: border-box;
+    
+}
+
+html, body{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+@import './abstract/variables';
+@import './abstract/maps';
+@import './abstract/extend';
+@import './abstract/mixing';
+
+@import './componentes/_index' ;
+@import './componentes/_navbar' ;
+@import './componentes/_tienda';
+@import './componentes/_header';
+@import './componentes/_cuidados';
+@import './componentes/_quienes-somos';
+@import './componentes/_footer';
+@import './componentes/contacto';
+
+

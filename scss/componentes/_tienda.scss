@@ -1,0 +1,102 @@
+#body-tienda{
+     @extend %background;
+
+     .grid-container-tienda{
+          width: 100%;
+          margin:50px auto;
+          padding: 5%;
+          font-family: 'Mandali', sans-serif;
+
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          grid-template-rows: auto;
+          grid-template-areas:
+          " caja-principal-1 caja-principal-3"
+          "caja-principal-2 caja-principal-4";
+          gap: 10px;
+          justify-items: center;
+          align-items: stretch;
+          justify-content: space-evenly;
+          
+               section{
+                    @extend %grid-tienda;
+
+                    div{
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: center;
+
+                         
+                              h3{
+                                   text-align: center;
+                                   font-family: 'Ysabeau Infant';
+                              }
+                              p{
+                                   padding: 10px;
+                                   text-align: center ;
+                                        a{
+                                             color: rgb(0, 0, 0)
+                                        }
+
+                              }
+                         }
+
+                         img{
+                              object-fit: cover;
+                              
+                              
+                         }
+                    }
+                    
+
+               } 
+               @media (min-width: 250px) and (max-width: 1150px){
+    
+                    .grid-container-tienda{
+                         grid-template-columns: 1fr;
+                         grid-template-areas:
+                          "caja-principal-1"
+                          "caja-principal-2"
+                          "caja-principal-3"
+                          "caja-principal-4"
+                         ;
+                         section{
+                              flex-flow: column wrap;
+                              height: auto;
+                              gap: 20px;
+                              
+                              
+                              
+                         }
+                         
+                    }
+          }
+
+}
+
+
+
+
+/*Grid Areas*/
+.caja-principal-1{
+
+     grid-area: caja-principal-1;
+}
+
+.caja-principal-2{
+     grid-area: caja-principal-2;
+
+}
+
+.caja-principal-3{
+     grid-area: caja-principal-3;
+
+}
+
+.caja-principal-4{
+     grid-area: caja-principal-4;
+
+}
+
+
+
